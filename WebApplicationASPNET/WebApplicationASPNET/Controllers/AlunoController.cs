@@ -15,7 +15,10 @@ namespace WebApplicationASPNET.Controllers
         {
             //return new string[] { "Jefferson", "Rain" };
             Alunos alunos = new Alunos();
-            return alunos.listaAlunos();
+            //return alunos.listaAlunos(); lista em memória
+
+            // Lista em arquivo json
+            return alunos.listaAlunosDB();  
         }
 
         // GET: api/Aluno/5

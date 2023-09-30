@@ -1,0 +1,42 @@
+﻿[
+  {
+    "Nome": "Paula",
+    "SobreNome": "Silva",
+    "RA": 10
+  },
+  {
+    "Nome": "João",
+    "SobreNome": "Souza",
+    "RA": 110
+  },
+  {
+    "Nome": "Luciana",
+    "SobreNome": "Marques",
+    "RA": 115
+  },
+  {
+    "Nome": "Rafaela",
+    "SobreNome": "Rain",
+    "RA": 120
+  },
+  {
+    "Nome": "Gabriel",
+    "SobreNome": "Hula",
+    "RA": 130
+  },
+  {
+    "Nome": "Arthur",
+    "SobreNome": "Pereira",
+    "RA": 140
+  },
+  {
+    "Nome": "Marcelo",
+    "SobreNome": "Inacio",
+    "RA": 135
+  },
+  {
+    "Nome": "Debora",
+    "SobreNome": "Alparone",
+    "RA": 155
+  }
+]

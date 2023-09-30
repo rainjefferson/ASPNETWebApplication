@@ -11,29 +11,30 @@ namespace WebApplicationASPNET.Controllers
     public class AlunoController : ApiController
     {
         // GET: api/Aluno
-        public IEnumerable<Alunos> Get()
+        public IEnumerable<Aluno> Get()
         {
             //return new string[] { "Jefferson", "Rain" };
-            Alunos alunos = new Alunos();
+            Aluno alunos = new Aluno();
             //return alunos.listaAlunos(); lista em memória
 
             // Lista em arquivo json
-            return alunos.listaAlunosDB();  
+            return alunos.listarAlunos();  
         }
 
         // GET: api/Aluno/5
-        public Alunos Get(int id)
+        public Aluno Get(int id)
         {
-            Alunos alunos = new Alunos();
-            return alunos.listaAlunos().Where(x => x.RA == id).FirstOrDefault();
+            Aluno alunos = new Aluno();
+            return alunos.listarAlunos().Where(x => x.RA == id).FirstOrDefault();
         }
 
         // POST: api/Aluno
-        public List<Alunos> Post(Alunos aluno)
+        public List<Aluno> Post(Aluno aluno)
         {
-            List<Alunos> alunos = new List<Alunos>();
-            alunos.Add(aluno);
-            return alunos;
+            Aluno _aluno = new Aluno();
+            _aluno.Inserir(aluno);
+                        
+            return _aluno.listaAlunos();
         }
 
         // PUT: api/Aluno/5

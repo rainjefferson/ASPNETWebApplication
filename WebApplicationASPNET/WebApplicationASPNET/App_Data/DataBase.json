@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "Nome": "Paula",
     "SobreNome": "Silva",
@@ -38,5 +38,10 @@
     "Nome": "Debora",
     "SobreNome": "Alparone",
     "RA": 155
+  },
+  {
+    "Nome": "Aimee",
+    "SobreNome": "Ferreira",
+    "RA": 201
   }
 ]

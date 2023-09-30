@@ -19,10 +19,10 @@ namespace WebApplicationASPNET.Controllers
         }
 
         // GET: api/Aluno/5
-        public string Get(int id)
+        public Alunos Get(int id)
         {
-            
-            return "Jefferson";
+            Alunos alunos = new Alunos();
+            return alunos.listaAlunos().Where(x => x.RA == id).FirstOrDefault();
         }
 
         // POST: api/Aluno

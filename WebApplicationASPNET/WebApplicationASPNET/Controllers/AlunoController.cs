@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebApplicationASPNET.Models;
 
 namespace WebApplicationASPNET.Controllers
 {
@@ -18,7 +19,8 @@ namespace WebApplicationASPNET.Controllers
         // GET: api/Aluno/5
         public string Get(int id)
         {
-            return "value";
+            Alunos alunos = new Alunos();
+            return alunos.listaAlunos();
         }
 
         // POST: api/Aluno
